@@ -39,7 +39,5 @@ class ProductoControllerTest {
             given(service.listar()).willReturn(Arrays.asList(producto));
             mockMvc.perform(get("/productos"))
                     .andExpect(status().isOk());
-
-
         }
 }
